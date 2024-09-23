@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  image-resolution: initial;
+}
+
+.cont2 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.cont22 {
+  margin: 50px;
+  padding-inline-start: 60px;
+  padding-inline-end: 10px;
+  gap: 4px;
+}
+.contactform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin: 4px;
+  border-color: rgba(229, 229, 229, 0.7);
+}
+
+input,
+textarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 12px 0;
+  padding: 12px;
+  border-radius: 20px;
+  inline-size: 380px;
+  border-color: rgba(229, 229, 229, 0.7);
+  gap: 12px;
+}
+textarea {
+  block-size: 80px;
+  border-color: rgba(229, 229, 229, 0.7);
+}
+
+button {
+  border: none;
+  color: white;
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  cursor: pointer;
+  inline-size: 400px;
+  block-size: 35px;
+}
+
+button:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(2, 0, 36, 1) 100%
+  );
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block-end: 50px;
+  padding-block-start: 20px;
+  margin: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: xxx-large;
+}
+footer {
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+}
+.cont1 {
+  h1 {
+    background-color: aliceblue;
+  }
+}
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .content {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  body {
+    padding: 0 10px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  .content {
+    flex: 1 1 100%;
+  }
+}

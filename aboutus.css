@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+  background-image: url(background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  image-resolution: initial;
+}
+
+.about-header {
+  color: rgb(0, 0, 0);
+  padding: 50px;
+  text-align: center;
+}
+
+.mission-statement,
+.our-story,
+.team,
+.milestones,
+.cta-footer {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: aliceblue;
+  box-shadow: rgba(0, 0, 0, 1);
+}
+
+h2 {
+  color: #333;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+
+.team-member img {
+  inline-size: 150px;
+  block-size: 150px;
+  border-radius: 50%;
+}
+
+.cta-footer {
+  text-align: center;
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+}
+
+.cta-footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+}
+@media (max-inline-size: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .content {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  body {
+    padding: 0 10px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  .content {
+    flex: 1 1 100%;
+  }
+}
